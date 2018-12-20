@@ -94,6 +94,7 @@ header {
     background-size: cover;
     background-position: center;    
     background-image: url(../images/formao-banniere.jpg);
+    margin-bottom: 200px;
 }
 
 .logo  {
