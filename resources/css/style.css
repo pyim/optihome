@@ -76,9 +76,13 @@ h3 {
 
 
 p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+}
+
+.font-arbre {
+    font-family: 'Coiny';
 }
 
 section {
@@ -113,7 +117,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-    padding: 50px;
+    padding: 140px;
 
 
 }
@@ -166,6 +170,22 @@ header {
 }
 
 
+
+.testarbre {
+    position: absolute;
+    width: 400px;
+    right: 300px;
+    text-align: center;
+}
+
+.testarbre h2 {
+    font-size: 200%;
+    margin: 0;
+    
+}
+
+
+
 /*  Button
 	======================================= */ 
 
@@ -178,6 +198,14 @@ header {
     transition: background-color 1s, border 1s, color 1s; /* alternative all 1s */
 }
 
+
+.btn-round {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    border: 1px solid #eee;
+    color: #eee; /* http://www.0to255.com */
+}
 
 .btn-full
  {
@@ -233,8 +261,11 @@ header {
 
 
 .test-etancheite-img {
-    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
+    
 }
 
 
@@ -410,9 +441,21 @@ background-color: rgba(255,255,255,0.95);
 
 
 
-/* ARBRES
+/* LOGOS
 	======================================= */
 
+
+.label {
+    margin: 50px 0 10px 0;
+}
+
+
+.logo-image img {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+}
 
 
 
