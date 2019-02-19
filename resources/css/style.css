@@ -35,31 +35,29 @@
 
 html {
     background-color: #fff;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
 
 }
 
 h1 {
     font-family: 'Lato', 'Arial', sans-serif;
-    color: #333;
-    text-transform: uppercase;
-    font-size: 240%;
+    color: #2f326a;
+    font-size: 300%;
     letter-spacing: -1px;
     font-weight: 300;
-    word-spacing: 8px
+    word-spacing: 2px
     
 }
 
 h2 {
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 250%;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: 400;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
-    color: #333;
-      word-spacing: 10px;
+    color: #2f326a;
+    word-spacing: 5px;
 
 }
 
@@ -70,7 +68,7 @@ h3 {
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 160%;
     font-weight: 300;
-    color: #333;
+    color: #2f326a;
 }
 
 
@@ -79,7 +77,16 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+    color: #6e6f80;
 }
+
+ul li {
+     font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #6e6f80;
+}
+
 
 .font-arbre {
     font-family: 'Coiny';
@@ -92,6 +99,11 @@ section {
     padding: 30px 0 60px 0;
 }
 
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
 
 
 /*  HEADER
@@ -124,7 +136,7 @@ header {
 .porte img {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
 }
 
 .porte h2 {
@@ -182,14 +194,8 @@ header {
 
 
 .testarbre {
-    width: 300px;
-    height: auto;
-    background: #fff;
     padding: 10px 10px;
     border-radius: 10px;
-    position: absolute;
-    right: 10px;
-    
     background-image: linear-gradient(   rgba(255,255,255,0.4),
                                         rgba(255,255,255,0.8)
                                     ),url(../images/arbre-modal.jpg);
@@ -197,12 +203,15 @@ header {
     background-position: center; 
     color: green;
     font-weight: 400;
-box-shadow: 1px 8px 9px #c5c2c2}
+    box-shadow: 1px 8px 9px #c5c2c2;
+    margin-top: 40px;
+
+}
 
 .news-arbre {
     position: absolute;
-    top: -10px;
-    right: -30px;
+    top: 30px;
+    right: 0px;
     background: green;
     color: #fff;
     width: 130px;
@@ -210,6 +219,20 @@ box-shadow: 1px 8px 9px #c5c2c2}
     border-radius: 10px;
     text-align: center;
 }
+
+.news-arbre-m {
+position: absolute;
+    top: -30px;
+    right: -10px;
+    background: green;
+    color: #fff;
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
 
 .testarbre h2 {
     font-size: 200%;
@@ -236,6 +259,48 @@ box-shadow: 1px 8px 9px #c5c2c2}
   margin: 0 auto;
   width: 50%;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .testarbre {
+display: none
+    }
+}
+
+
+.testarbre-mobile {
+   display: none
+}
+
+
+@media only screen and (max-width: 768px) {
+  .testarbre-mobile {
+    display: block;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(   rgba(255,255,255,0.4),
+                                        rgba(255,255,255,0.8)
+                                    ),url(../images/arbre-modal.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: green;
+    font-weight: 400;
+    margin: 10px 70px;
+
+    }
+}
+
+.testarbre-m {
+}
+
+.testarbre-m img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 
 /*  Button
 	======================================= */ 
@@ -312,8 +377,7 @@ box-shadow: 1px 8px 9px #c5c2c2}
 
 
 .test-etancheite-img {
-    display: block;
-    margin: 0 auto;
+
     max-width: 100%;
     height: auto;
     
@@ -384,6 +448,9 @@ box-shadow: 1px 8px 9px #c5c2c2}
     margin: 0 0 10px 0
 }
 
+.test p {
+    color: #fff;
+}
 .h2-vert {
     background-color: #66c925;
     padding: 5px;
@@ -431,18 +498,9 @@ box-shadow: 1px 8px 9px #c5c2c2}
 /* RT 2012 */
 .rt2012 {
 
-background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* linear-gradient
-    linear-gradient(to right, #1E9600, #FFF200, #FF0000); 
-    radial-gradient(circle, #1E9600 0%, #FFF200 80%, #FF0000 100%);
-    */
-    
-   
+background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
 
-.rt2012 h2 {
-    
-}
 
 
 
@@ -494,6 +552,7 @@ background-color: rgba(255,255,255,0.95);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 8px 9px #c5c2c240;
+    margin-bottom: 20px;
 }
 
 .etape img {
@@ -511,9 +570,6 @@ background-color: rgba(255,255,255,0.95);
 }
 
 
-.etape:before {
-    content: url(/resources/images/arrow.png);
-}
 
 
 
@@ -526,11 +582,8 @@ background-color: rgba(255,255,255,0.95);
 }
 
 
-.logo-image img {
-    display: block;
-    height: 100px;
-    width: auto;
-    margin: 0 auto;
+.logo-image img  {
+    max-width: 100%
 }
 
 
@@ -544,7 +597,7 @@ background-color: rgba(255,255,255,0.95);
 	======================================= */
 .contact {
     padding: 0 20px;
-    background-color: #ffffff;
+    background-color: #f7f8fa;
 }
 
 .contact-content {
@@ -559,9 +612,16 @@ background-color: rgba(255,255,255,0.95);
 
 .contact-form {
     height: 420px;
-    padding: 20px 30px;
-    margin: 60px 0;
+    padding: 10px 30px;
+}
 
+.contact-form ul li {
+    list-style-type: none;
+    margin: 6px 0;
+}
+
+.contact-form i {
+    font-size: 1.2em;
 }
 
 .contact-map {
@@ -577,7 +637,17 @@ background-color: rgba(255,255,255,0.95);
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
+    margin-top: 20px
 }
+
+
+@media (max-width: 767px) {
+  .map {
+   margin-top: 80px;
+  }
+}
+
+
 
 .map iframe {
     position: absolute;
