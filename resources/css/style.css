@@ -419,6 +419,8 @@ display: none
 
 .test-image {
     margin-bottom: 80px;
+    max-width: 100%;
+    height: auto;
 }
 .test-image-1 {
     width: 300px;
@@ -435,7 +437,7 @@ display: none
     height: auto;
     border-radius: 10px;
     position: absolute;
-    left: 45%;
+    left: 35%;
     top: 30%;
     margin-bottom: 80px;
     
@@ -500,6 +502,74 @@ display: none
 
 background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
+
+
+
+
+
+
+
+
+
+
+/*  PORTFOLIO
+	======================================= */ 
+
+.section-portfolio {  /* https://www.heropatterns.com */
+    background-color: #ffffff;
+}
+
+
+.section-portfolio h2 {
+    
+}
+
+.portfolio-img {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+}
+
+.portfolio-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .8s;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.portfolio-details h4, .portfolio-details p {
+    color: #555;
+    font-size: 60%;
+    margin: 0;
+    transition: all .8s;
+
+}
+
+.portfolio-img:hover .portfolio-details, .portfolio-img:hover h4, .portfolio-img:hover p {
+    font-size: 100%;
+
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -583,7 +653,8 @@ background-color: rgba(255,255,255,0.95);
 
 
 .logo-image img  {
-    max-width: 100%
+    max-width: 80%;
+    height: auto
 }
 
 
@@ -597,8 +668,10 @@ background-color: rgba(255,255,255,0.95);
 	======================================= */
 .contact {
     padding: 0 20px;
-    background-color: #f7f8fa;
+    background-color: #242424;
 }
+
+
 
 .contact-content {
     padding: 0 20px;
@@ -611,18 +684,32 @@ background-color: rgba(255,255,255,0.95);
 }
 
 .contact-form {
-    height: 420px;
+    height: auto;
     padding: 10px 30px;
 }
+
+.contact-form h2 {
+    color: #fff;
+}
+
 
 .contact-form ul li {
     list-style-type: none;
     margin: 6px 0;
+    color: #fff;
 }
 
 .contact-form i {
     font-size: 1.2em;
 }
+
+.contact-form img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 5px;
+}
+
 
 .contact-map {
     height: 420px;
@@ -662,7 +749,7 @@ background-color: rgba(255,255,255,0.95);
 	======================================= */
 
 footer {
-    background-color: #363636;
+    background-color: #242424;
     height: 60px;
     color: #fff;
     text-align: center;
